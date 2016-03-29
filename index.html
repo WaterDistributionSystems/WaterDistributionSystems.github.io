@@ -2,22 +2,66 @@
 layout: default
 ---
 
-<div class="home">
+<style>
+.bg-grey {
+    background-color: #f6f6f6;
+}
+.col-centered{
+float: none;
+margin: 0 auto;
+}
 
-  <h1 class="page-heading">Posts</h1>
+</style>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<div class="jumbotron" style="background:red;color:white; background:url('{{site.baseurl}}/assets/img/drop-of-water.jpg') no-repeat;
+ background-size: cover;">
+        <h1>{{site.title}}</h1>
+        The Water Distribution Systems Group at DICAM, University of Bologna (Italy)
+</div>
+<div class="container-fluid bg-grey">
+        <div class="row">
+                <div class="col-xs-1">
+                </div>
+                <div class="col-xs-2">
+                        <div class="row text-center">
+                                <h2><a href="people">People</a></h2>
+                                </div>
+                        <div class="row text-center">
+                                <a href="people"><img src="{{site.baseurl}}/assets/img/Icon_of_three_people_in_different_shades_of_grey.svg" class="img-square" height="100"></a>
+                        </div>
+                </div>
+                <div class="col-xs-2">
+                        <div class="row text-center">
+                                <h2><a href="research">Research</a></h2>
+                                </div>
+                        <div class="row text-center">
+                                <a href="research"><img src="{{site.baseurl}}/assets/img/research-icon.png" class="img-square" height="100"></a>
+                        </div>
+                </div>
+                <div class="col-xs-2">
+                        <div class="row ">
+                                <h2><p class="text-center"> <a href="pubs">Publications</a> </p></h2>
+                                </div>
+                        <div class="row text-center">
+                                <a href="pubs"><img src="{{site.baseurl}}/assets/img/article-icon.svg" class="img-square" height="100"></a>
+                        </div>
+                </div>
+                <div class="col-xs-2">
+                        <div class="row ">
+                                <h2><p class="text-center"> <a href="software">Software</a> </p></h2>
+                                </div>
+                        <div class="row text-center">
+                                <a href="software"><img src="{{site.baseurl}}/assets/img/floppy-icon.svg" class="img-square" height="100"></a>
+                        </div>
+                </div>
+                <div class="col-xs-2">
+                        <div class="row ">
+                                <h2><p class="text-center"> <a href="data">Data</a> </p></h2>
+                                </div>
+                        <div class="row text-center">
+                                <a href="data"><img src="{{site.baseurl}}/assets/img/db.svg" class="img-square" height="100"></a>
+                        </div>
+                </div>
+        </div>
 
 </div>
